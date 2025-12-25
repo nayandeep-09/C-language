@@ -1,7 +1,7 @@
 <h1 align="center">🚀 Started Learning C Programming</h1>
 
 <p align="center">
-  <b>A personal journey into C language fundamentals and K&R exercises</b>
+  <b>A personal journey into C language fundamentals</b>
 </p>
 
 <hr>
@@ -17,7 +17,6 @@
 <ul>
   <li>Build strong fundamentals in C programming</li>
   <li>Understand low-level concepts like memory and data representation</li>
-  <li>Solve classic K&R exercises</li>
   <li>Prepare for technical interviews and academics</li>
 </ul>
 
