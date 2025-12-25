@@ -1,4 +1,4 @@
 # C-language
 Started learning C
 <br>
-Owner - Nayandeepgit 
+Owner - Nayandeep
