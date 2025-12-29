@@ -45,4 +45,68 @@ int main()
     the value of i is 8
     the value of i is 9 */
 
+
+// #INFINITE WHILE LOOP
+    #include <stdio.h>
+
+int main(){
+    int i = 0; 
+while (i<10) { 
+printf("the value of i is %d\n", i);  
+} 
+    return 0;
+}
+
+// the value of i is 0  -- This will be printed infinite times.
+
+#include <stdio.h>
+
+int main(){
+    int i = 0; 
+while (2<10) // if 2 is less than 10 than keep printing
+{ 
+printf("the value of i is %d\n", i);  
+i++; // the value of will keep increasing and will get printed
+} 
+    return 0;
+}
+
+/*  the value of i is 0
+    the value of i is 1
+    the value of i is 2
+    the value of i is 3
+            |
+            |
+            |
+    the value of i is 10000 --- and infinity times    */
+
+
+// Write a program to print natural numbers from 10 to 20 when initial loop counter is initialized to 0.
+
+#include <stdio.h>
+
+int main(){
+    int i = 0;
+    while(i<=20){   // when the i is less than 20 or equal to 20 the run condition
+        if(i>=10){  // if the i is greater than 10 or equal only than print the value
+            printf("The value is right now: %d\n", i);
+        }
+        i++;    //keep i increased by 1
+    }   
+    
+    return 0;
+}
+
+/*  The value is right now: 10
+    The value is right now: 11
+    The value is right now: 12
+    The value is right now: 13
+    The value is right now: 14
+    The value is right now: 15
+    The value is right now: 16
+    The value is right now: 17
+    The value is right now: 18
+    The value is right now: 19
+    The value is right now: 20      */
+
     

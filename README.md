@@ -25,6 +25,7 @@
   <li>C Language</li>
   <li>VS Code</li>
   <li>Git & GitHub</li>
+  <li>Chat GPT</li>
 </ul>
 
 <hr>
