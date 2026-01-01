@@ -1,11 +1,15 @@
-// While loop -
+//  While loop -
+//      while loop runs the instruction available inside it and keep 
+//     running untill the condition will be false and it is only when  
+//     the condition is true else terminates.
+
 #include <stdio.h>
 
 int main()
 {
     int n = 1;                      // Value assigned 1 to n
     while (n < 5)
-    {                               // condition is when n or 1 is greater less than 5 than perform below task under while..
+    {                               // condition is when n or 1 is less than 5 than perform below task under while..
         printf("\nStill n is less than 5 and now value was : %d", n);
                                     // n was 1 and 1 is less than 5 so printed the written text.
         n = n + 1;                  // this contion increased the n with 1 so 1+1=2 so n=2 for next 2 nd step
