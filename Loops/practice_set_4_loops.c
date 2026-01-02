@@ -186,7 +186,7 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    int i = 7;
+    int i = 9;
     int n = 2; // Start from 2 because every number is divisible by 1
 
     // The loop runs ONLY as long as i is not divisible by n
@@ -205,3 +205,50 @@ int main() {
 }
 
 // 7 is prime
+
+// Q11- Solve 10th question with other 2 loops
+
+//do-while
+int main() {
+    int i = 5;
+    int n = 1; // Start from 2 because every number is divisible by 1
+
+    // The loop runs ONLY as long as i is not divisible by n
+    do {
+        n++;
+    }while (i % n != 0);
+
+    // If the first number that finally divides i is i itself, it's prime
+    if (n == i) {
+        printf("%d is prime", i);
+    } else {
+        printf("%d is not prime", i);
+    }
+
+    return 0;
+}
+
+// 5 is prime
+
+//for loop
+
+int main() {
+    int i = 12;
+    int n; // Start from 2 because every number is divisible by 1
+
+    // The loop runs ONLY as long as i is not divisible by n
+    for(n=2; i % n != 0; n++){
+        //let it be empty
+    }
+
+    // If the first number that finally divides i is i itself, it's prime
+    if (n == i) {
+        printf("%d is prime", i);
+    } else {
+        printf("%d is not prime", i);
+    }
+
+    return 0;
+}
+
+// 12 is not prime
