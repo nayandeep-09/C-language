@@ -70,3 +70,92 @@ int main()
 
 /*      Enter you body mass: 65
         The force on earth is: 637.0 N      */
+
+//  Q4. Write a program using recursion to calculate nth element of Fibonacci series.
+
+#include <stdio.h>
+
+// Function to calculate the nth Fibonacci number using recursion
+int fib(int n) {
+    if (n == 0) {
+        return 0; // Base case 1: the 0th Fibonacci number is 0
+    } else if (n == 1) {
+        return 1; // Base case 2: the 1st Fibonacci number is 1
+    } else {
+        return fib(n - 1) + fib(n - 2); // Recursive case: sum of the two previous Fibonacci numbers
+    }
+}
+
+int main() {
+    int n;
+    printf("Enter the term number: ");
+    scanf("%d", &n);
+
+    int result = fib(n); // Call the recursive function
+    printf("The %dth Fibonacci number is: %d\n", n, result);
+
+    return 0;
+}
+
+/*       Enter the term number: 15
+        The 15th Fibonacci number is: 610       */
+
+/* Q5. What will the following line produce in a C program:
+        int a = 4;
+        printf("%d %d %d \n", a, ++a, a++);     */
+        
+#include <stdio.h>
+
+int main(){
+    int a = 4;
+        printf("%d %d %d \n", a, ++a, a++);
+    return 0;
+}
+
+//  6 6 4
+
+// Q6- Write a recursive function to calculate the sum of first ‘n’ natural numbers.
+#include <stdio.h>
+int sum(int n){
+    if(n==0){
+        return 0;
+    }else{
+        return n+sum(n-1);
+    }
+}
+
+int main(){
+    int a=8;
+    printf("Sum of %d numbers is: %d", a, sum(a));
+    return 0;
+}
+
+//      Sum of 8 numbers is: 36
+
+// Q7- Write a program using function to print the following pattern (first n lines)
+//      *
+//      * * *
+//      * * * * *
+#include <stdio.h>
+
+// Function to print the star pattern
+void printStarPattern(int n) {
+    for (int i = 1; i <= n; i++) {
+        int count = 2 * i - 1;
+        for (int j = 0; j < count; j++) {
+            printf("*");
+        }
+        printf("\n"); // Move to the next line after printing each row
+    }
+}
+
+int main() {
+    int n;
+    printf("Enter the number of lines: ");
+    scanf("%d", &n);
+    
+    printStarPattern(n); // Call the function once with the user input
+    
+    return 0;
+}
+
