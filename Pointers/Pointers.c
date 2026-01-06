@@ -1,5 +1,5 @@
 // Pointers.
-
+// For intergers
 #include <stdio.h>
 
 int main()
@@ -73,3 +73,7 @@ printf("This will print the value of j stored address : %d\n", &j);
 /*      This will print the value of j stored address : 11
         This will print the value of j stored address : 11
         This will print the value of j stored address : 6422296         */
+
+
+    // For characters.
+    
