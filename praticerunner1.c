@@ -1,12 +1,17 @@
 #include <stdio.h>
-int tenx(int i){
-  i=  i * 10;   
- return i; 
-}
 
 int main(){
-    int a = 10;
-    
-    printf("The 10x of value a is %d and value of a is still %d",tenx(a),a);
+    int max[3][2];
+    for(int i =0; i < 3; i++){
+        printf("Enter the first column %d row: ",i);
+        scanf("%d",&max[i]);
+        for (int j = 0; j < 2; j++)
+        {
+            printf("Enter the second column %d row: ",j);
+            scanf("%d",&max[j]);
+        }
+    }
     return 0;
 }
+
+//again from 7:00:00
