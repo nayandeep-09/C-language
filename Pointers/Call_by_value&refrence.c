@@ -61,7 +61,7 @@ int main(){
 /*  a is: 20
     b is: 10    */
 
-//  Swapping with the call by address
+//  Swapping with the call by reference
 #include <stdio.h>
 int swap(int *a, int *b){
     int c = *a;
