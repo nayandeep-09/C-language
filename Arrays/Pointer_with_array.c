@@ -198,6 +198,40 @@ int main() {
         arr[2][0] = 11
         arr[2][1] = 22      */
 
+// 2_D Arrays        
 //Create a 2-d array by taking input from the user. Write a display function to
 //print the content of this 2-d array on the screen.
+    #include <stdio.h>
+
+int main(){
+    int max[3][2];
+
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+            printf("Enter block %d value %d\n:", i,j);
+            scanf("%d",&max[i][j]);
+        }
+        
+    }
+    printf("For max[3][2] values are : {{%d,%d},{%d,%d},{%d,%d}}",max[0][0],max[0][1],max[1][0],max[1][1],max[2][0],max[2][1]);
     
+    return 0;
+}
+
+/*          Enter block 0 value 0
+            :1
+            Enter block 0 value 1
+            :4
+            Enter block 1 value 0
+            :7
+            Enter block 1 value 1
+            :9
+            Enter block 2 value 0
+            :11
+            Enter block 2 value 1
+            :22
+            For max[3][2] values are : {{1,4},{7,9},{11,22}}                 */
+
+            
