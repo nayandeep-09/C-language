@@ -1,0 +1,2 @@
+name is : nayan || his salary is: 50
+name is : raj || his salary is: 30
