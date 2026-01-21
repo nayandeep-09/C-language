@@ -1,3 +1,12 @@
+// Free();
+
+// syntax - free(ptr); //memory of ptr is released.
+
+// it will frees the pointers or memory stored in pointer.
+
+// Quick Quiz: Write a program to demonstrate the usage of free() with malloc().
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -18,8 +27,17 @@ int main()
         printf("%.2f\n", ptr[i]);
     }
 
-        ptr = realloc (ptr, 10*sizeof(int));   
-        // new size given from 5 to 10 now it can store 10 pointers at a time.
+    free(ptr);
+    
+    printf("\n%.2f", ptr[0]);
 
     return 0;
 }
+
+/*  10.54
+    11.20
+    12.11
+    13.52
+    14.62
+
+    0.00    */
